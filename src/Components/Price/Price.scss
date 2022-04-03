@@ -1,0 +1,118 @@
+.price__block {
+   margin-top: 35px;
+   text-align: center;
+   h2 {
+      font-family: "Orbitron";
+      font-weight: 700;
+      font-size: 66px;
+      line-height: 130%;
+      color: #1d1d1f;
+   }
+   p {
+      font-family: "Nanum-Medium";
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 110%;
+      color: #979797;
+      margin-top: 30px;
+      margin-bottom: 20px;
+   }
+   .dropdown__btn {
+      button {
+         width: 370px;
+         height: 60px;
+         background: #f9f7f7;
+         border-radius: 30px;
+         border: none;
+
+         font-family: "Nanum-Medium";
+         font-weight: 400;
+         font-size: 24px;
+         line-height: 110%;
+         color: #2c2c2c;
+
+         .dropdown__arr {
+            margin-left: 200px;
+         }
+      }
+   }
+   .rows {
+      display: flex;
+      flex-wrap: wrap;
+
+      .cols-4 {
+         flex: 0 1 33%;
+         padding: 0 8px;
+      }
+   }
+
+   .price__card {
+      background: #f8f8f8;
+      border-radius: 6px;
+      padding: 40px 36px;
+      margin-top: 40px;
+      p {
+         font-family: "Nanum-ExtraBold";
+         font-size: 19px;
+         line-height: 130%;
+         text-align: center;
+         color: #000000;
+         margin-bottom: 70px;
+         margin-top: 0px;
+      }
+      button {
+         width: 230px;
+         height: 60px;
+         border: 1px solid #5a5a5a;
+         box-sizing: border-box;
+         border-radius: 30px;
+
+         font-family: "Nanum-SemiBold";
+         font-weight: 500;
+         font-size: 24px;
+         line-height: 120%;
+         text-align: center;
+         color: #5a5a5a;
+
+         &:focus {
+            background-color: #ff004f;
+            border: none;
+            color: #fff;
+         }
+      }
+   }
+}
+
+.color1 {
+   color: #ff004f;
+}
+
+@media (min-width: 0px) and (max-width: 620px) {
+   .price__block {
+      h2 {
+         font-size: 33px;
+      }
+      p {
+         font-size: 20px;
+      }
+
+      .dropdown__btn {
+         button {
+            width: 100%;
+            font-size: 20px;
+         }
+      }
+
+      .rows {
+         display: block;
+      }
+      .price__card {
+         p {
+            b {
+               font-size: 20px;
+            }
+            font-size: 14px;
+         }
+      }
+   }
+}

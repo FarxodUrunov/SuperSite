@@ -1,0 +1,49 @@
+.menu__block {
+   width: 605px;
+   height: 700px;
+   background: #faf5f5;
+   padding: 107px 82px;
+
+   a{
+	   text-decoration: none;
+	   color: #1d1d1f;
+   }
+
+   svg{
+	   font-size: 25px;
+	   cursor: pointer;
+   }
+
+   ul {
+	   list-style: none;
+      li {
+         font-family: "Orbitron";
+         font-weight: 700;
+         font-size: 44px;
+         line-height: 170%;
+         color: #1d1d1f;
+		 cursor: pointer;
+
+		 span{
+			font-family: 'Nanum-Light';
+			font-weight: 300;
+			font-size: 28px;
+			line-height: 35px;
+			color: #5A5A5A;
+		 }
+      }
+   }
+}
+
+@media (min-width: 0px) and (max-width: 620px){
+	.menu__block{
+		width: 80%;
+		padding-left: 20px;
+		padding-right: 20px;
+		ul{
+			li{
+				font-size: 22px;
+			}
+		}
+	}
+}

@@ -1,0 +1,145 @@
+.whatWill__block {
+   padding: 100px 0;
+
+   h2 {
+      font-family: "Orbitron";
+      font-weight: 700;
+      font-size: 66px;
+      line-height: 130%;
+      text-align: center;
+      color: #1d1d1f;
+      margin-bottom: 60px;
+   }
+   .rows {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      .doira-1 {
+         position: absolute;
+         left: 367px;
+         top: 258px;
+      }
+      .doira-2 {
+         position: absolute;
+         left: 751px;
+         top: 258px;
+      }
+      .span {
+         display: inline-block;
+         width: 40px;
+         height: 40px;
+         background-color: #fff;
+         border-radius: 50%;
+      }
+   }
+   .cols-4 {
+      flex: 0 1 33%;
+      margin-bottom: 15px;
+   }
+   .whatWill__card {
+      height: 280px;
+      padding: 10px;
+      span {
+         width: 89px;
+         height: 89px;
+         background: #f3f0f0;
+         display: block;
+         margin: 0 auto;
+         border-radius: 100%;
+         position: relative;
+         img {
+            width: 53.3px;
+            height: 53.3px;
+            position: absolute;
+            left: 40px;
+            top: 40px;
+         }
+      }
+
+      h4 {
+         font-family: "Nanum-Bold";
+         font-weight: 700;
+         font-size: 24px;
+         line-height: 30px;
+         text-align: center;
+         color: #393939;
+         margin-top: 48px;
+      }
+      p {
+         font-family: "Nanum-Light";
+         font-weight: 300;
+         font-size: 18px;
+         line-height: 24px;
+         text-align: center;
+         color: #5a5a5a;
+      }
+   }
+   .box-shadow__1 {
+      box-shadow: 3px 3px 0px #e0e0e0;
+   }
+   .box-shadow__2 {
+      box-shadow: 0px 3px 0px #e0e0e0;
+   }
+   .box-shadow__3 {
+      box-shadow: -3px 3px 0px #e0e0e0;
+   }
+   .box-shadow__4 {
+      box-shadow: 3px 0px 0px #e0e0e0;
+   }
+   .box-shadow__5 {
+      box-shadow: 0px 0px 0px #e0e0e0;
+   }
+   .box-shadow__6 {
+      box-shadow: -3px 0px 0px #e0e0e0;
+   }
+}
+
+@media (min-width: 0px) and (max-width: 620px) {
+   .whatWill__block {
+      h2 {
+         font-size: 33px;
+      }
+      .rows {
+		  .doira-1{
+			  display: none;
+		  }
+		  .doira-2{
+			  display: none;
+		  }
+         .cols-4 {
+            flex: 0 1 50%;
+            // padding: 5px;
+            // margin-top: 25px;
+         }
+      }
+      .whatWill__card {
+         span {
+            width: 70px;
+            height: 70px;
+            img {
+               width: 38.3px;
+               height: 38.3px;
+            }
+         }
+         h4 {
+            font-size: 20px;
+         }
+         p {
+            font-size: 12px;
+            line-height: normal;
+         }
+      }
+      .box-shadow__3 {
+         box-shadow: 3px 3px 0px #e0e0e0;
+      }
+      .box-shadow__4 {
+         box-shadow: 0px 3px 0px #e0e0e0;
+      }
+      .box-shadow__5 {
+         box-shadow: 3px 0px 0px #e0e0e0;
+      }
+      .box-shadow__6 {
+         box-shadow: 0px 0px 0px #e0e0e0;
+      }
+   }
+}

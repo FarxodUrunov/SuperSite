@@ -1,0 +1,174 @@
+.services__block {
+   padding-top: 72px;
+   padding-bottom: 67px;
+   h2 {
+      font-family: "Orbitron";
+      font-weight: 700;
+      font-size: 66px;
+      line-height: 130%;
+      text-align: center;
+      color: #1d1d1f;
+   }
+
+   .rows {
+      display: flex;
+      flex-wrap: wrap;
+      .cols-4 {
+         flex: 0 1 33%;
+         padding: 0 10px;
+         .services__card {
+            background: #ffffff;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.16);
+            border-radius: 15px;
+            height: 451px;
+            margin-top: 50px;
+            transition: all 0.3s linear;
+
+            &:hover {
+               box-shadow: 0px 10px 40px rgb(131, 130, 130);
+               //   box-shadow: none;
+            }
+            .card__img {
+               background-image: url(../../../public/img/Subtract.svg);
+               background-size: cover;
+               border-radius: 16px 0 0 0;
+               padding-bottom: 10px;
+
+               img {
+                  margin: 16px 0 0 154px;
+                  width: 216px;
+                  height: 134px;
+               }
+               span {
+                  font-family: "Orbitron";
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 64px;
+                  line-height: 130%;
+                  color: #1d1d1f;
+                  margin-left: 20px;
+                  width: 130px;
+                  display: inline-block;
+               }
+               .swipe__btn {
+                  margin-left: 120px;
+                  font-family: "Nanum-Bold";
+                  font-weight: 700;
+                  font-size: 20px;
+                  line-height: 25px;
+                  color: #ff004f;
+                  border: none;
+                  background-color: transparent;
+                  position: relative;
+                  .header__arr {
+                     position: absolute;
+                     left: 61px;
+                     top: 4px;
+                     color: #ff004f;
+                     transform: rotate(-90deg);
+                  }
+               }
+            }
+            h3 {
+               margin-left: 20px;
+               margin-top: 22px;
+               margin-bottom: 5px;
+               font-family: "Nanum-Bold";
+               font-weight: 700;
+               font-size: 28px;
+               line-height: 35px;
+               text-transform: uppercase;
+               color: #393939;
+            }
+            p {
+               margin-left: 20px;
+               margin-right: 20px;
+               font-family: "Nanum-Light";
+               font-weight: 300;
+               font-size: 18px;
+               line-height: 22px;
+               color: #5a5a5a;
+            }
+         }
+      }
+   }
+}
+
+.cols-8 {
+   position: relative;
+   .services__contact {
+      position: absolute;
+      width: 578px;
+      height: 602px;
+      left: 121px;
+      top: 50px;
+      background: #ffffff;
+      box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.12);
+      border-radius: 6px;
+      transition: all 0.3s linear;
+
+      &:hover {
+         box-shadow: 0px 10px 40px rgb(131, 130, 130);
+         //   box-shadow: none;
+      }
+
+      .containers {
+         width: 500px;
+         padding: 0;
+
+         .contact__block {
+            margin-top: 50px;
+
+            p {
+               margin-bottom: 25px;
+            }
+
+            button {
+               margin-top: 26px;
+            }
+         }
+      }
+   }
+}
+
+@media (min-width: 0px) and (max-width: 620px) {
+   .services__block {
+      h2 {
+         font-size: 33px;
+      }
+
+      .rows {
+         display: block;
+         margin-bottom: 520px;
+         .cols-4 {
+            .services__card {
+               .card__img {
+               }
+            }
+         }
+         .cols-8 {
+            .services__contact {
+               width: 100%;
+               left: 0;
+               .containers {
+                  width: 100%;
+               }
+               .contact__block {
+                  width: 100%;
+                  h2 {
+                     font-size: 33px;
+                  }
+                  p {
+                     font-size: 20px;
+                  }
+                  form {
+                     input {
+                        width: 90%;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}

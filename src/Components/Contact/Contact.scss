@@ -1,0 +1,59 @@
+.contact__block {
+   margin: 100px 0;
+   text-align: center;
+   h2 {
+      font-family: "Orbitron";
+      font-weight: 700;
+      font-size: 66px;
+      line-height: 130%;
+      color: #1d1d1f;
+   }
+   p {
+      font-family: "Nanum-Medium";
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 110%;
+      text-transform: uppercase;
+      color: #5a5a5a;
+      margin-bottom: 40px;
+   }
+
+   input {
+      width: 470px;
+      height: 60px;
+      background: #f5f5f5;
+      border-radius: 2px;
+      border: none;
+      margin: 5px 15px;
+      padding: 10px 25px;
+   }
+   button {
+      width: 296px;
+      height: 60px;
+      background: #ff004f;
+      border-radius: 30px;
+      border: none;
+      margin-top: 50px;
+
+      font-family: "Nanum-SemiBold";
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 120%;
+      color: #ffffff;
+   }
+}
+
+@media (min-width: 0px) and (max-width: 620px) {
+   .contact__block {
+      h2 {
+         font-size: 33px;
+      }
+      p {
+         font-size: 20px;
+      }
+
+      input {
+         width: 90%;
+      }
+   }
+}
